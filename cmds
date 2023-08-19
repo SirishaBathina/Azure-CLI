@@ -24,3 +24,5 @@ az vm create -g "app-grp" -n "appvm" --image "MicrosoftWindowsServer:WindowsServ
 az vm create -g "app-grp" -n "appvm" --image "MicrosoftWindowsServer:WindowsServer:2022-Datacenter:latest" --admin-username "appusr" --size "Standard_DS2_v2" --vnet-name "app-network" --subnet "SubnetA"
 
 az group create -n app-grp -l eastus
+
+az storage account create -g app-grp -n storageaccountsiri -l eastus --sku Standard_LRS
